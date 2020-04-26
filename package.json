@@ -1,0 +1,22 @@
+{
+  "name": "speech-color-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "colors.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splinekonstantin/Speech-Recognition-Color-Game.git"
+  },
+  "author": "Gaydukov Konstantin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splinekonstantin/Speech-Recognition-Color-Game/issues"
+  },
+  "homepage": "https://github.com/splinekonstantin/Speech-Recognition-Color-Game#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
