@@ -304,14 +304,15 @@ exports.handleResult = handleResult;
 
 var _colors = require("./colors");
 
-function logWords(results) {// console.log(results[results.length - 1][0].transcript);
+function logWords(results) {
+  console.log(results[results.length - 1][0].transcript);
 }
 
 function handleResult(_ref) {
   var results = _ref.results;
   logWords(results);
-  var words = results[results.length - 1][0].transcript; // console.log(words);
-  // lowercase everything
+  var words = results[results.length - 1][0].transcript;
+  console.log(words); // lowercase everything
 
   var color = words.toLowerCase(); // strip any spaces out
 
@@ -333,6 +334,7 @@ var _handlers = require("./handlers");
 
 var _colors = require("./colors");
 
+console.log(_handlers.handleResult);
 var colorsEl = document.querySelector('.colors');
 
 function displayColors(colors) {
@@ -354,6 +356,7 @@ function start() {
   console.log('Starting...'); //   make a new speech reco
 
   var recognition = new SpeechRecognition();
+  console.log(recognition);
   recognition.continuous = true;
   recognition.interimResults = true;
   recognition.onresult = _handlers.handleResult;
@@ -362,7 +365,7 @@ function start() {
 
 start();
 colorsEl.innerHTML = displayColors(_colors.colorsByLength);
-},{"./handlers":"handlers.js","./colors":"colors.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./handlers":"handlers.js","./colors":"colors.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -390,7 +393,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64941" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61127" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -566,5 +569,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","speech.js"], null)
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","speech.js"], null)
 //# sourceMappingURL=/speech.5883760b.js.map

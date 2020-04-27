@@ -1,6 +1,7 @@
 import { handleResult } from './handlers';
 import { colorsByLength, isDark } from './colors';
 
+console.log(handleResult);
 const colorsEl = document.querySelector('.colors');
 
 function displayColors(colors) {
@@ -27,6 +28,7 @@ function start() {
   console.log('Starting...');
   //   make a new speech reco
   const recognition = new SpeechRecognition();
+  console.log(recognition);
   recognition.continuous = true;
   recognition.interimResults = true;
   recognition.onresult = handleResult;
